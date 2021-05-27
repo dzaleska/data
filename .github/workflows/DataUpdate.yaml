@@ -31,5 +31,6 @@ jobs:
           python filter_csv_consolidate.py
       - name: Commit and push
         run: |
+          git add .
           git commit -am "Update data (auto)"
           git push origin master
